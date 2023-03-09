@@ -116,7 +116,7 @@
     "ora" "5.4.1"
     "rxjs" "6.6.7"
 
-"@angular/animations@^15.0.0 || ^16.0.0", "@angular/animations@^15.2.0", "@angular/animations@15.2.2":
+"@angular/animations@^15.0.0", "@angular/animations@^15.0.0 || ^16.0.0", "@angular/animations@^15.2.0", "@angular/animations@15.2.2":
   "integrity" "sha512-2XYJn+my4Gf02QAziO+WJJLOQyw0Ao79xAp6IWj/rUOCxNDlRPY3TwoMqLZVtjSmWxSdmx/fPqd393vPawrPLg=="
   "resolved" "https://registry.npmjs.org/@angular/animations/-/animations-15.2.2.tgz"
   "version" "15.2.2"
@@ -156,7 +156,7 @@
     "symbol-observable" "4.0.0"
     "yargs" "17.6.2"
 
-"@angular/common@^15.0.0 || ^16.0.0", "@angular/common@^15.2.0", "@angular/common@15.2.2":
+"@angular/common@^15.0.0", "@angular/common@^15.0.0 || ^16.0.0", "@angular/common@^15.2.0", "@angular/common@15.2.2":
   "integrity" "sha512-407yHyMR5CGFWjZPeiBNHa4UKwOTTMCNn7gmfi243AxIaPjIHwCDvIOx2w5OfrV+OUKSMIuqMRHLP4eUYkJDjA=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-15.2.2.tgz"
   "version" "15.2.2"
@@ -186,14 +186,14 @@
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/core@^15.0.0 || ^16.0.0", "@angular/core@^15.2.0", "@angular/core@15.2.2":
+"@angular/core@^15.0.0", "@angular/core@^15.0.0 || ^16.0.0", "@angular/core@^15.2.0", "@angular/core@15.2.2":
   "integrity" "sha512-Rn9LKeeryV0hVrOxlOPnQJdgUxbKdB8NByhptzB6XSzZ0ODx0ZN+iYVRLqu0Fu95zh5oSeYYU+2yT6+FIIX65w=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-15.2.2.tgz"
   "version" "15.2.2"
   dependencies:
     "tslib" "^2.3.0"
 
-"@angular/forms@^15.0.0 || ^16.0.0", "@angular/forms@^15.2.0":
+"@angular/forms@^15.0.0", "@angular/forms@^15.0.0 || ^16.0.0", "@angular/forms@^15.2.0":
   "integrity" "sha512-X2cXhD8gQBn03RZJ5XD2mgf90vyeH2HABbNLelv3GCQRgn4SCTHM4cP1J9OCdX0r6cz+JBjz13fDChdWb624Mg=="
   "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-15.2.2.tgz"
   "version" "15.2.2"
@@ -2116,6 +2116,11 @@
     "read-package-json-fast" "^3.0.0"
     "which" "^3.0.0"
 
+"@popperjs/core@^2.11.6":
+  "integrity" "sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
+  "version" "2.11.6"
+
 "@schematics/angular@15.2.2":
   "integrity" "sha512-H8R2TziGgJkXFZf3NQCOKQhkbGhVX8bPQAKv/YFEpPm1n//cPshysf2r3nBCc0WcTGkdC087UTCYvbFjQ7Fa6w=="
   "resolved" "https://registry.npmjs.org/@schematics/angular/-/angular-15.2.2.tgz"
@@ -2760,6 +2765,11 @@
   "integrity" "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
+
+"bootstrap@^5.2.3":
+  "integrity" "sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.3.tgz"
+  "version" "5.2.3"
 
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
@@ -4394,6 +4404,11 @@
     "merge-stream" "^2.0.0"
     "supports-color" "^8.0.0"
 
+"jquery@^3.6.4":
+  "integrity" "sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ=="
+  "resolved" "https://registry.npmjs.org/jquery/-/jquery-3.6.4.tgz"
+  "version" "3.6.4"
+
 "js-tokens@^4.0.0":
   "integrity" "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
   "resolved" "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
@@ -5013,6 +5028,13 @@
   "integrity" "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
+
+"ngx-bootstrap@^10.2.0":
+  "integrity" "sha512-bn5wdvH6QQ2JGu4TgUbozdULBFMxZNPNTgO7dRiosx9FRrFvKcgxkGSgU/xoj+4kP1vgh8zwzaiDfvH/Bfb+Aw=="
+  "resolved" "https://registry.npmjs.org/ngx-bootstrap/-/ngx-bootstrap-10.2.0.tgz"
+  "version" "10.2.0"
+  dependencies:
+    "tslib" "^2.3.0"
 
 "node-forge@^1":
   "integrity" "sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA=="
@@ -5768,7 +5790,7 @@
   dependencies:
     "queue-microtask" "^1.2.2"
 
-"rxjs@^6.5.3 || ^7.4.0", "rxjs@^7.5.5", "rxjs@~7.8.0":
+"rxjs@^6.5.3 || ^7.4.0", "rxjs@^6.5.3 || ^7.6.0", "rxjs@^7.5.5", "rxjs@~7.8.0":
   "integrity" "sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg=="
   "resolved" "https://registry.npmjs.org/rxjs/-/rxjs-7.8.0.tgz"
   "version" "7.8.0"
