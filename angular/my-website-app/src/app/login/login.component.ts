@@ -10,30 +10,39 @@ import { MatInputModule } from '@angular/material/input';
 
 export class LoginComponent implements OnInit {
 
-  ngOnInit() {
-    this.actionLoginRegister();
-    //this.loadFormInDelivery();
+  ngOnInit(): void {
+    const container = document.querySelectorAll<HTMLElement>('container')[0];
+    container.classList.add("showBody")
   }
-  actionLoginRegister() {
-    const div_login = document.querySelectorAll<HTMLElement>('.form-input-login');
-    const div_register = document.querySelectorAll<HTMLElement>('.form-input-register');
-    const btn_register = document.querySelectorAll<HTMLElement>('.btn_register');
-    const btn_login = document.querySelectorAll<HTMLElement>('.btn_login');
+  showLogin = true;
 
-    btn_register[0].addEventListener('click', () => {
-      div_login[0].classList.remove("show")
-      div_login[0].classList.add("hidden")
-      div_register[0].classList.remove("hidden")
-      div_register[0].classList.add("show")
-
-
-    });
-    btn_login[0].addEventListener('click', () => {
-      div_register[0].classList.remove("show")
-      div_register[0].classList.add("hidden")
-      div_login[0].classList.remove("hidden")
-      div_login[0].classList.add("show")
-
-    });
+  toggleElement(element: any, show: boolean) {
+    if (show) {
+      element.classList.remove("hidden");
+      element.classList.add("show");
+    } else {
+      element.classList.remove("show");
+      element.classList.add("hidden");
+    }
   }
+
+  handleRegisterClick() {
+    const divLogin = document.querySelector<HTMLElement>('.form-input-login');
+    const divRegister = document.querySelector<HTMLElement>('.form-input-register');
+
+    this.toggleElement(divRegister, true);
+    this.toggleElement(divLogin, false);
+    this.showLogin = false;
+  }
+
+  handleLoginClick() {
+    const divLogin = document.querySelector<HTMLElement>('.form-input-login');
+    const divRegister = document.querySelector<HTMLElement>('.form-input-register');
+
+    this.toggleElement(divLogin, true);
+    this.toggleElement(divRegister, false);
+    this.showLogin = true;
+  }
+
+
 }

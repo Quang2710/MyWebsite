@@ -7,8 +7,8 @@
       </div>
       <div class="change-login">
         <div class="button-action">
-          <div class="btn btn_login">Login</div>
-          <div class="btn btn_register">Register</div>
+          <div class="btn btn_login" (click)="handleLoginClick()">Login</div>
+          <div class="btn btn_register" (click)="handleRegisterClick()">Register</div>
         </div>
       </div>
     </div>
@@ -19,17 +19,20 @@
       <div class="login_form form-control">
         <h1>Welcome To System</h1>
         <div class="form-input">
-          <div class="form-input form-input-login">
+          <div class="form-input form-input-login" [class.show]="showLogin" [class.hidden]="!showLogin">
             <input type="text" placeholder="Account" class="input_login">
-            <input type="password" placeholder="Password" class="input_login">
+            <input type="password" placeholder="Password" class="input_login"><br>
+            <p class="forgot_password">Forgot Password</p>
+            <div class="btn-confirm login-confirm">Login</div>
           </div>
-          <div class="form-input form-input-register">
+          <div class="form-input form-input-register" [class.show]="!showLogin" [class.hidden]="showLogin">
             <input type="text" placeholder="Account" class="input_login">
             <input type="password" placeholder="Password" class="input_login">
             <input type="password" placeholder="Confirm Password" class="input_login">
+            <p class="abc">Forgot Password</p>
+            <div class="btn-confirm register-confirm">Register</div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

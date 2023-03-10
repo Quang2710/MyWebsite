@@ -9,15 +9,25 @@
   font-family: Trebuchet MS;
 }
 
-.login-form {
+.login-form:not(.img-oto) {
   width: 70%;
   height: 600px;
   background-color: white;
   border-radius: 10px;
-
+  animation: ViewContainer 1s ;
   z-index: 1;
 }
+@keyframes ViewContainer{
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+  transform: translateY(0%);
+  opacity: 1;
+  }
 
+}
 .login-form-content {
   display: flex;
   width: 100%;
@@ -47,9 +57,6 @@
   background-color: #b1f4cf;
 }
 
-// .img-logo{
-//   height: 200%;
-// }
 h3 {
   font-size: 30px;
   font-family: Brush Script MT;
@@ -125,11 +132,17 @@ h3 {
 .img-oto {
   height: 62%;
   position: absolute;
-  // right: 100px;
-  // bottom: 50px;
-  transform: rotateY(180deg);
+  //transform: rotateY(180deg);
+  animation: moveRight 1s ease-in-out;
 }
-
+@keyframes moveRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 h1 {
   height: 10%;
   text-align: center;
@@ -138,6 +151,7 @@ h1 {
 .form-input {
   height: 90%;
   width: 100%;
+  position: relative;
 }
 
 .form-input-login,
@@ -149,6 +163,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   position: absolute;
+  background-color: transparent;
 }
 
 .form-input-login.hidden {
@@ -219,4 +234,48 @@ input:focus {
   outline: none;
   border: 2px solid rgb(250, 161, 139);
   box-shadow: 0 0 5px rgb(250, 161, 139);
+}
+.btn-confirm{
+  width: 40%;
+  height: 10%;
+  border-radius: 10px;
+  background-color: #B1F4CF ;
+  color: black;
+}
+.btn-confirm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-confirm:hover{
+  animation: animateButton 0.5s;
+  cursor: pointer;
+}
+.register-confirm:hover{
+  animation: animateButton 0.5s;
+  cursor: pointer;
+}
+@keyframes animateButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 1260px) {
+ .img-oto{
+  width:105%;
+  height: auto;
+ }
+}
+
+//Screen by Mobile
+@media only screen and (max-width: 768px) {
+  .img-oto{
+   
+   }
 }
