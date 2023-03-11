@@ -9,13 +9,14 @@
   font-family: Trebuchet MS;
 }
 
-.login-form:not(.img-oto) {
+.login-form {
   width: 70%;
   height: 600px;
   background-color: white;
   border-radius: 10px;
-  animation: ViewContainer 1s ;
   z-index: 1;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  animation: ViewContainer 1s ;
 }
 @keyframes ViewContainer{
   0%{
@@ -92,6 +93,7 @@ h3 {
   font-family: Comic Sans MS;
   margin: 1px;
   border-radius: 2px;
+  z-index: 2;
 }
 
 .btn:hover {
@@ -124,13 +126,15 @@ h3 {
 .form-img {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   background-color: #b1f4cf;
   height: 100%;
+  width: calc(100% / 2);
 }
 
 .img-oto {
-  height: 62%;
+  width: 100%;
   position: absolute;
   //transform: rotateY(180deg);
   animation: moveRight 1s ease-in-out;
@@ -143,9 +147,31 @@ h3 {
     transform: translateX(0%);
   }
 }
+.img-oto.init{
+  animation: initImg 1s;
+}
+@keyframes initImg {
+  0% {
+   opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 h1 {
-  height: 10%;
   text-align: center;
+  font-weight: 900;
+  color: #11c060;
+}
+.forgot_password{
+  border-bottom: 1px solid white;
+}
+.forgot_password:hover{
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+.form-input-login > p:last-child{
+  color: gray;
 }
 
 .form-input {
@@ -255,6 +281,23 @@ input:focus {
   animation: animateButton 0.5s;
   cursor: pointer;
 }
+.icon-login{
+  width: 40%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.icon{
+  //width: calc(100% / 3);
+  height: 100%;
+}
+.icon:hover{
+  cursor: pointer;
+  animation: animateButton 0.5s;
+}
+
 @keyframes animateButton {
   0% {
     transform: scale(1);
@@ -276,6 +319,6 @@ input:focus {
 //Screen by Mobile
 @media only screen and (max-width: 768px) {
   .img-oto{
-   
+
    }
 }

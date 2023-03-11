@@ -14,22 +14,38 @@
     </div>
     <div class="login-form-content">
       <div class="login_form form-img">
-        <img src="../assets/common/img/car.png" alt="" class="img-oto" />
+        <img [src]="'../assets/common/img/' + images[currentSlideIndex]" alt="" class="img-oto" />
       </div>
       <div class="login_form form-control">
-        <h1>Welcome To System</h1>
         <div class="form-input">
-          <div class="form-input form-input-login" [class.show]="showLogin" [class.hidden]="!showLogin">
+          <div class="form-input form-input-login"
+            [class.show]="showLogin"
+            [class.hidden]="!showLogin">
+            <h1>Welcome To System</h1>
+
             <input type="text" placeholder="Account" class="input_login">
             <input type="password" placeholder="Password" class="input_login"><br>
             <p class="forgot_password">Forgot Password</p>
-            <div class="btn-confirm login-confirm">Login</div>
+            <div class="btn-confirm login-confirm" (click)="navigateToComponent()">Login</div>
+            <br>
+            <p>Or sign in with </p>
+            <div class="icon-login">
+              <img src="../assets/common/img/google.png" alt="" class="icon" />
+              <img src="../assets/common/img/facebook.png" alt="" class="icon" />
+              <img src="../assets/common/img/twitter.png" alt="" class="icon" />
+            </div>
+
           </div>
-          <div class="form-input form-input-register" [class.show]="!showLogin" [class.hidden]="showLogin">
+          <div class="form-input form-input-register"
+            [class.show]="!showLogin"
+            [class.hidden]="showLogin">
+            <h1>Now register</h1>
             <input type="text" placeholder="Account" class="input_login">
             <input type="password" placeholder="Password" class="input_login">
-            <input type="password" placeholder="Confirm Password" class="input_login">
-            <p class="abc">Forgot Password</p>
+            <input type="password" placeholder="Confirm Password"
+              class="input_login">
+            <!-- <p class="abc">Now click register</p> -->
+            <br>
             <div class="btn-confirm register-confirm">Register</div>
           </div>
         </div>
