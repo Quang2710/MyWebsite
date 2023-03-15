@@ -1,0 +1,51 @@
+.error-not-found,.img-error-not-found,.back-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.error-not-found{
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+.img-error-not-found{
+  width: 80%;
+  height: 50%;
+
+}
+.img-error{
+  height: 100%;
+}
+p{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.back-page{
+  width: 7rem;
+  height: 2.5rem;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.btn-action{
+   font-size: 15px;
+}
+.back-page:hover{
+  background-color: #2D74FF;
+  cursor: pointer;
+  color: white;
+  animation: 1s animateButton;
+}
+@keyframes animateButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
