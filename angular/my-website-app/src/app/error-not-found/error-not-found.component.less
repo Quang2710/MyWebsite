@@ -9,6 +9,7 @@
   height: 100vh;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 .img-error-not-found{
   width: 80%;
@@ -48,4 +49,119 @@ p{
   100% {
     transform: scale(1);
   }
+}
+
+.leaves {
+  position: absolute;
+  top: 0;
+}
+
+.leaf1 {
+  position: absolute;
+  font-size: 70px;
+  top:0;
+  animation: fall 5s linear infinite;
+}
+
+.leaf2 {
+  position: absolute;
+  font-size: 55px;
+  top:0;
+  animation: fall2 6s linear infinite;
+}
+
+.leaf3 {
+  position: absolute;
+  font-size: 40px;
+  top:-400px;
+  left:-100px;
+  animation: fall 4s linear infinite 1s;
+}
+
+.leaf4 {
+  position: absolute;
+  font-size: 45px;
+  top:-400px;
+  left:300px;
+  animation: fall2 4s linear infinite 1.5s;
+}
+
+.leaf5 {
+  position: absolute;
+  font-size: 55px;
+  top:-410px;
+  left:250px;
+  animation: fall3 4s linear infinite 2s;
+}
+.leaf6 {
+  position: absolute;
+  font-size: 55px;
+  top:-410px;
+  left:-250px;
+  animation: fall3 4s linear infinite 1.5s;
+}
+
+.leaf7 {
+  position: absolute;
+  font-size: 35px;
+  top:-410px;
+  left:-350px;
+  animation: fall2 5s linear infinite .5s;
+}
+
+.leaf8 {
+  position: absolute;
+  font-size: 75px;
+  top:-430px;
+  left:550px;
+  animation: fall3 5s linear infinite .5s;
+}
+
+.leaf9 {
+  position: absolute;
+  font-size: 35px;
+  top:-430px;
+  left:150px;
+  animation: fall4 6s linear infinite .3s;
+}
+
+.leaf10 {
+  position: absolute;
+  font-size: 55px;
+  top:-430px;
+  left:450px;
+  animation: fall5 3.7s linear infinite 1.3s;
+}
+
+.leaf11 {
+  position: absolute;
+  font-size: 55px;
+  top:-430px;
+  left:650px;
+  animation: fall5 4.7s linear infinite 1.7s;
+}
+
+@keyframes fall {
+  0% {top:0px; transform: translateX(-100px) rotateX(180deg);}
+  100% {top:100vh; transform: translateX(250px) rotateX(-180deg);}
+}
+
+@keyframes fall2 {
+  0% {top:0px; transform: translateX(50px) rotateX(-90deg);}
+  100% {top:100vh; transform: translateX(-350px) rotateX(180deg);}
+}
+
+@keyframes fall3 {
+  0% {top:-430px; transform: translateX(0px) rotateX(-180deg);}
+  100% {top:100vh; transform: translateX(-400px) rotateX(180deg);}
+}
+
+@keyframes fall4 {
+  0% {top:-430px; transform: translateX(0px) rotateY(-180deg);}
+  100% {top:100vh; transform: translateX(-400px) rotateY(180deg);}
+}
+
+@keyframes fall5 {
+  0% {top:0px; transform: translateX(-100px) rotateY(180deg);}
+  100% {top:100vh; transform: translateX(250px) rotateY(-180deg);}
 }
