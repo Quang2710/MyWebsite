@@ -12,14 +12,16 @@ import { MaterialExampleModule } from './material.module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { ErrorNotFoundComponent } from './error-not-found/error-not-found.component';
+import { MasterComponent } from './master/master.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     LoginComponent,
     NavMenuComponent,
-    ErrorNotFoundComponent
+    ErrorNotFoundComponent,
+      MasterComponent
    ],
   imports: [
     MatNativeDateModule,

@@ -1,7 +1,13 @@
 <nav>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about">About</a></li>
-    <li><a routerLink="/contact">Contact</a></li>
-  </ul>
+  <div class="nav-bar">
+    <div class="logo">
+      <img src="../assets/common/img/logo.png" alt="" class="img-logo"(click)="navigateToMenuComponent()" />
+    </div>
+    <div class="flex"></div>
+    <div class="nav-item">
+      <div class="btn nav-item-router" (click)="navigateToMenuComponent()">Home</div>
+      <div class="btn nav-item-router" (click)="navigateToMasterComponent()">Page1</div>
+      <div class="btn nav-item-router">Page2</div>
+    </div>
+  </div>
 </nav>

@@ -1,0 +1,44 @@
+
+.nav-bar{
+  width: 100%;
+  min-height: 100px;
+  height: 8%;
+  overflow: hidden;
+  position: absolute;
+  background-color: white;
+  display: flex;
+  z-index: 1;
+}
+.logo,.flex,.nav-item{
+  height: 100%;
+  /* /border-left: 1px solid; */
+}
+.logo{
+  width: 20%;
+}
+.img-logo{
+  padding-left: 20px;
+  height: 100%;
+  cursor: pointer;
+}
+.flex{
+  width: 50%;
+}
+.nav-item{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn{
+  width: calc(100% / 3);
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+}
