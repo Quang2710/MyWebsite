@@ -1,17 +1,17 @@
 .home{
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
 }
 .home-component{
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  background-color: rgb(227, 233, 231);
+  flex-direction: column;
 }
 .home-component {
   animation: slideInLeft  0.6s ease-in-out;
@@ -28,17 +28,23 @@
     transform: translateX(0);
   }
 }
-.fotter{
- // position: fixed !important;
+
+[class|="content"] {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid;
+  display: flex;
 }
-.data-table{
-  width: 80%;
-  margin: 20px auto;
-  max-height: 500px;
-  overflow: auto;
- position: relative;
+[class|="header"] {
+ height: 100%;
+ display: flex;
+ border-right: 1px solid;
+
+}
+.header-mid{
+  width: 60%;
+}
+.header-left,.header-right{
+  width: 20%;
 }
 
-.mat-column-name {
-  height: 100px;
-}

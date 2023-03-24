@@ -1,44 +1,74 @@
-
-.nav-bar{
+.nav-bar {
   width: 100%;
-  min-height: 100px;
+  min-height: 75px;
   height: 8%;
   overflow: hidden;
   position: absolute;
   background-color: white;
   display: flex;
   z-index: 1;
+  font-family: Trebuchet MS;
 }
-.logo,.flex,.nav-item{
+
+.logo, .flex, .nav-item, .action-acc {
   height: 100%;
   /* /border-left: 1px solid; */
 }
-.logo{
+
+.logo {
   width: 20%;
-}
-.img-logo{
-  padding-left: 20px;
   height: 100%;
-  cursor: pointer;
 }
-.flex{
+
+.logo-content {
+  font-size: 30px;
+  font-family: Trebuchet MS;
+  height: 100%;
+  padding-left: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
   width: 50%;
 }
-.nav-item{
-  width: 30%;
+
+.nav-item {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.btn{
-  width: calc(100% / 3);
-  font-size: 20px;
+.menu.active{
+  border-bottom: 1px solid;
+  background-color: black;
+}
+
+.btn {
+  width: calc(100% / 6);
+  font-size: 15px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: aquamarine;
   cursor: pointer;
 }
+
+.action-acc {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-logo {
+  height: 75%;
+  cursor: pointer;
+}
+/* .show-border {
+  border-bottom: 1px solid black;
+} */

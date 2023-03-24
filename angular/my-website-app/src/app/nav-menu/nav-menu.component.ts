@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-menu',
@@ -8,15 +8,22 @@ import { Router } from '@angular/router';
 })
 export class NavMenuComponent implements OnInit {
 
-  constructor(private router: Router) {}
+  isComponentAVisible: boolean = false;
+
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
+    // this.route.url.subscribe(url => {
+    //   const currentUrl = url.map(segment => segment.path).join('/');
+    //   // Kiểm tra xem đường dẫn hiện tại có chứa '/component-a' không
+    //   if (currentUrl.includes('/home')) {
+    //     this.isComponentAVisible = true;
+    //     var x = document.querySelector('menu')
+    //     x?.classList.add('active')
+    //   } else {
+    //     this.isComponentAVisible = false;
+    //   }
+    // });
   }
 
-  navigateToMenuComponent() {
-    this.router.navigate(['/home']);
-  }
-  navigateToMasterComponent() {
-    this.router.navigate(['/master']);
-  }
 }
