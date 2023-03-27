@@ -65,11 +65,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .img-logo {
   height: 75%;
   cursor: pointer;
 }
-/* .show-border {
-  border-bottom: 1px solid black;
-} */
+.logout
+{
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  position: absolute;
+  margin-top: 100%;
+  z-index: 9999;
+}

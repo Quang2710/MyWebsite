@@ -14,8 +14,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { ErrorNotFoundComponent } from './error-not-found/error-not-found.component';
 import { MasterComponent } from './master/master.component';
 
+
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
@@ -31,7 +32,7 @@ import { MasterComponent } from './master/master.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent]
