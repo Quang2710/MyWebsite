@@ -431,6 +431,7 @@ h3 {
 
 .content-our_course {
   flex-direction: column;
+  margin-top: 5%;
 }
 
 .frame {
@@ -496,26 +497,57 @@ h3 {
 .img-live {
   height: 100%;
 }
-.img-human:first-child .img-live{
+
+.img-human:first-child .img-live {
   animation: horizontal-shaking 2s infinite;
 }
-.img-human:last-child .img-live{
+
+.img-human:last-child .img-live {
   animation: tilt-n-move-shaking 2s infinite;
 }
 
 @keyframes horizontal-shaking {
-  0% { transform: translateX(0) }
-  25% { transform: translateX(5px) }
-  50% { transform: translateX(-5px) }
-  75% { transform: translateX(5px) }
-  100% { transform: translateX(0) }
- }
- @keyframes tilt-n-move-shaking {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(5px, 5px) rotate(5deg); }
-  50% { transform: translate(0, 0) rotate(0eg); }
-  75% { transform: translate(-5px, 5px) rotate(-5deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(5px)
+  }
+
+  50% {
+    transform: translateX(-5px)
+  }
+
+  75% {
+    transform: translateX(5px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 .live-button {
@@ -842,10 +874,12 @@ h4 {
         padding-left: 10px;
       }
     }
-    .btn-action-production:hover{
+
+    .btn-action-production:hover {
       cursor: pointer;
-        animation: animateButton 0.5s;
+      animation: animateButton 0.5s;
     }
+
     .more-action-production {
       width: 40%;
       height: 100%;
@@ -888,6 +922,134 @@ li {
   }
 }
 
+.subcribe-discount:not(p),
+.discount-banner-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .subcribe-discount {
+  margin-top: 5%;
   height: 30%;
+
+  .discount-banner {
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #31225C;
+    position: relative;
+
+    img {
+      margin-left: 10%;
+      height: 100%;
+    }
+
+    .radius-shape-1,
+    .radius-shape-2 {
+      height: 100px;
+      width: 100px;
+      background-color: #685a8f;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .radius-shape-1 {
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 100px;
+    }
+
+    .radius-shape-2 {
+      top: 0;
+      left: 58%;
+      z-index: 0;
+      border-bottom-left-radius: 100px;
+    }
+
+    .discount-banner-view {
+      width: 30%;
+      height: 80%;
+      background-color: white;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      position: absolute;
+      top: 0;
+      right: 50px;
+      flex-direction: column;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+      h3 {
+        color: #31225C;
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+      h1 {
+        background: linear-gradient(to right, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        font-size: 70px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      P:first-child {
+        color: gray;
+      }
+
+      P:last-child {
+        color: orange;
+      }
+    }
+  }
+}
+
+//____________________________________________COURSE____________________________________________
+
+.content-course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-course{
+  //position: relative;
+
+
+  .course-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    > div {
+      width: 20%;
+      height: 50%;
+      border: 1px solid;
+      padding: 10px auto;
+      overflow-y: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: red;
+      overflow-y: hidden;
+      overflow-x: auto;
+      transform-origin: top left;
+      transform: rotate(90deg)translateY(-100vh);
+
+    }
+  }
 }
