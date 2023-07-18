@@ -11,8 +11,8 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements AfterViewInit {
-
-
+  popularCourse:any[] = ['1','2','3','4','5','6','7','8','9','10'];
+  constructor() {}
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   ngAfterViewInit() {

@@ -303,12 +303,15 @@
     <div class="content-course">
       <p>Our Course</p>
       <h3>Popular Course</h3>
-      <div class="course-list">
-        <div class="course-list-item">1</div>
-        <div class="course-list-item">2</div>
-        <div class="course-list-item">3</div>
-        <div class="course-list-item">4</div>
-        <div class="course-list-item">5</div>
+      <div class="course-list" >
+        <div class="course-list-item" *ngFor="let item of popularCourse">
+          <div class="item-header">
+            <img src="../assets/common/img/cloud.png" alt="" class="item-header-icon" />
+          </div>
+          <h5>Sorry, We are not in Progess yet</h5>
+          <span>3 Skill +</span>
+          <div class="item-join-course"></div>
+        </div>
       </div>
     </div>
     <div class="content-footer"></div>
