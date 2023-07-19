@@ -13,6 +13,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { ErrorNotFoundComponent } from './error-not-found/error-not-found.component';
 import { MasterComponent } from './master/master.component';
+import { FotterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MasterComponent } from './master/master.component';
     LoginComponent,
     NavMenuComponent,
     ErrorNotFoundComponent,
-      MasterComponent
+    MasterComponent,
+    FotterComponent
    ],
   imports: [
     MatNativeDateModule,

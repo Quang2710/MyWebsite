@@ -17,6 +17,10 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() {
   }
+
+  ScroolSoureList(){
+
+  }
 }
 
 

@@ -1014,7 +1014,8 @@ li {
 //____________________________________________COURSE____________________________________________
 
 .content-course,
-.course-list-item {
+.course-list-item,
+.item-join-course {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1033,31 +1034,79 @@ li {
   .course-list-item {
     min-width: 300px;
     height: 250px;
-    line-height: 50px;
+    line-height: 20px;
     text-align: center;
-    background-color: #ddd;
+    background-color: #f6f6f6;
     margin-right: 10px;
     border-radius: 10px;
-    .item-header{
+    justify-content: space-evenly;
+
+    .item-header {
       height: 10%;
-      .item-header-icon{
-        width: 100%;
+
+      .item-header-icon {
+        font-size: none;
+        height: 100%;
       }
     }
-    h5{
+
+    h5 {
       font-size: 1.5rem;
       font-weight: 700;
     }
-    span{
+
+    span {
       font-size: 1.0rem;
       font-weight: 300;
     }
-    .item-join-course{
+
+    .item-join-course {
       height: 10%;
-      background-color: gray;
+      background-color: rgb(236, 236, 236);
+      position: relative;
+      cursor: pointer;
+      align-items: start;
+      border-radius: 2px;
+
+      span {
+        font-size: 0.9rem;
+        margin-left: 10px;
+        z-index: 1;
+        width: 90%;
+        position: relative;
+        i{
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .progress-join-course {
+        position: absolute;
+        height: 100%;
+        background: linear-gradient(to right, #ff8a00, #e52e71);
+        left: 0;
+        top: 0;
+        border-radius: 2px;
+      }
     }
   }
-  .course-list-item > {
+
+  .item-join-course:hover .progress-join-course {
+    animation: progressAnimation 0.7s forwards;
+  }
+
+  @keyframes progressAnimation {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+
+  }
+
+  .course-list-item>* {
     width: 70%;
     text-align: start;
   }
